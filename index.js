@@ -23,6 +23,8 @@ function start(){
    mongoose.connect(DB_URL)
    app.listen(PORT,()=>{
        console.log(`Server listen on port:${PORT}`)
+
+
    })
 
    } catch(err){

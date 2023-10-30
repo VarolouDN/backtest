@@ -36,7 +36,9 @@ router.post("/login", async (req, res) => {
                 username: test,
                 password: testPassword,
             },
-        });
+        }).set("Access-Control-Allow-Origin", "*")
+            .set("Access-Control-Allow-Headers", "Content-Type")
+            ;
     } catch (e) {
         res.send({ message: "Server error" });
     }
