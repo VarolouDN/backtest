@@ -15,7 +15,7 @@ const DB_URL=process.env.DB_URL
 
 app.use(cors());
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "https://fronttest-7k6j.vercel.app");
+    res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
     next();
